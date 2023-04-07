@@ -1,0 +1,54 @@
+<!-- used '!' shortcut to fill out basic set up -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tab will display this below -->
+    <title>Super Heroes Group App</title>
+    <!-- referencing bootstrap to modify/customize html -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<!-- manipulating the body to be a 'container' (like a customizable box)-->
+<body class="container">
+
+<!-- added a background image to give color/aesthetics -->
+<style>
+    body {
+        background-image: url(https://wallpapers.com/images/featured/svj3txxxmkdcrjzj.jpg);
+    }
+</style>
+
+    <br>
+    <!-- the 5 divs below are setting the parameters to be a flexible / responsive 'boxes' that are equal height + width that 
+    can be manipulated -->
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <!-- label is what will be displayed, similar to a 'placeholder' -->
+                        <label for="new-group-name">Super Heroes</label>
+                        <!-- input is where the user will type in the 'text' to create their new super hero group(s) -->
+                        <input type="text" class="form-control" id="new-group-name">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <!-- to add humor, created the button with the word below -->
+               <button id="new-group" class="btn btn-primary form-control">Formation!</button>
+            </div>
+        </div>
+    </div><br>
+
+    <!-- gave the div below an idea so it can be targeted / manipulated -->
+    <div id="groups">
+
+    </div>
+
+    <!-- the 3 scripts below are referencing the JavaScript files (1. the main code file 2. JQuery file 3. bootstrap file) -->
+    <script src="super heroes.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
